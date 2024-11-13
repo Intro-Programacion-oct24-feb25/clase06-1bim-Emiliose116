@@ -77,10 +77,19 @@ public class ComercioTres {
                 }
             }
         }
+        
+        /*
+        
+        */
+        /*
+        En este caso mi solucion presenta dos variables. Agregue una variable 
+        llamada "porcentjeFinal".
+        */
+       
         if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
             porcentajeFinal = porcentajeSeguro;
         } else {
-            if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
                 porcentajeFinal = 10;
             }
         }

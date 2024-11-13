@@ -15,8 +15,8 @@ public class Ejemplo02 {
         String pais;
         
         pais = "Ecuador";
-        //      0123456
-        char letra = pais.charAt(0);
+        //      0123456       Hay que contar desde el 0
+        char letra = pais.charAt(5);
         System.out.printf("%s\n", letra);
         
     }

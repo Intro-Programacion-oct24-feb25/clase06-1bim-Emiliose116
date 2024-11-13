@@ -22,6 +22,9 @@ public class EjemploCadenas02 {
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
         
+        /*
+        El String.format nos permite acumular datos
+        */
         
         cadenaFinal = String.format("%sCiudad:%s\n",
                 cadenaFinal, ciudad);
