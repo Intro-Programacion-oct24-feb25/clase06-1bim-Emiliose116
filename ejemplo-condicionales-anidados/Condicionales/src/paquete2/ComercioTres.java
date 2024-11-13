@@ -78,12 +78,37 @@ public class ComercioTres {
             }
         }
         
-        /*
         
-        */
         /*
         En este caso mi solucion presenta dos variables. Agregue una variable 
         llamada "porcentjeFinal".
+        
+        Apesar de que usé otro método, la solucíón correcta tomando en cuenta la
+        clase es:
+        opción 3
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeFinal = 10;
+        
+        
+        // opción 1
+        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        // opción 4
+        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        Porque no se puede usar && 
+        porque no hay numero que cumpla las dos
+        condiciones a pesar de todo va a funcionar pero no eslo adecuado para la
+        resolucion del problema
+        
+        // opción 2
+        if (porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        
+        Aquí no toman en cuenta los posibles números negativos
         */
        
         if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
@@ -93,7 +118,7 @@ public class ComercioTres {
                 porcentajeFinal = 10;
             }
         }
-
+        
         adicionalSeguro = (sueldoBasico * porcentajeFinal) / 100;
         /*es mejor
         usar una variable que un numero
