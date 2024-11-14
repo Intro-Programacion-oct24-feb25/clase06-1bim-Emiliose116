@@ -28,7 +28,8 @@ public class Ejemplo032 {
         System.out.println("Ingrese el nombre de una ciudad del Ecuador");
         String nombre = entrada.nextLine();
         nombre = nombre.toLowerCase();
-        String nombre2 = nombre.substring(0,1);
+        String nombre2 = nombre.substring(0,1); /*+USAMOS UN SUB STRING CON RANGO
+        0, 1 PARA LUEGO IMPRIMIRLO MAS ADELANTE*/
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
                                        // cadena
@@ -43,7 +44,7 @@ public class Ejemplo032 {
             case 'u':  
      
                 System.out.printf("Nombre con inicial %s de %s\n", 
-                        nombre2, nombre.toLowerCase());
+                        nombre2.toUpperCase(), nombre.toLowerCase());
                 break;
             
             default:
